@@ -43,6 +43,7 @@ Environment=TFL_PHOTOCARD_PASSWORD=
 Environment=TFL_PHOTOCARD_PERSON=
 # if wanted:
 # Environment=NOTIFICATON_PUSH_CARD_NUMBER=foo
+# Environment=POLL_MINUTES=5
 
 [Install]
 WantedBy=multi-user.target
@@ -56,3 +57,5 @@ WantedBy=multi-user.target
 * `TFL_PHOTOCARD_PASSWORD`: TfL Photocard Password
 * `TFL_PHOTOCARD_PERSON`: Which person to fetch cards for
 * `NOTIFICATON_PUSH_CARD_NUMBER`: If present, push card number and type with notification
+* `POLL_MINUTES`: How often (in minutes) to poll TfL servers. This also controls the extension of sessions, so values
+  above 10 minutes may fail.

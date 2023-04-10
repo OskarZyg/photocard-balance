@@ -46,4 +46,4 @@ while True:
                            (card.oyster_card_number, card.prepaid_balance))
     connection.commit()
     cycles += 1
-    time.sleep(60)  # Poll every minute
+    time.sleep(60 * float(os.getenv("POLL_MINUTES", 5)))  # Poll every 5 minutes by default
