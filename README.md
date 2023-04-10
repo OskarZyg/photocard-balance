@@ -37,7 +37,7 @@ Restart=on-failure
 RestartSec=60
 
 Environment=PUSHED_APP_KEY=
-Environment=PUSHED_API_KEY=
+Environment=PUSHED_APP_SECRET=
 Environment=TFL_PHOTOCARD_EMAIL=
 Environment=TFL_PHOTOCARD_PASSWORD=
 Environment=TFL_PHOTOCARD_PERSON=
@@ -51,7 +51,7 @@ WantedBy=multi-user.target
 ### Environment Variables
 
 * `PUSHED_APP_KEY`: Pushed App Key
-* `PUSHED_API_KEY`: Pushed API Key
+* `PUSHED_APP_SECRET`: Pushed App Secret
 * `TFL_PHOTOCARD_EMAIL`: Tfl Photocard Email
 * `TFL_PHOTOCARD_PASSWORD`: TfL Photocard Password
 * `TFL_PHOTOCARD_PERSON`: Which person to fetch cards for
