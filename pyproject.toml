@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "photocard-balance"
+version = "0.1.0"
+description = ""
+authors = ["Oskar <56176746+OskarZyg@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "photocard_balance"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+photocard = "^0.1.0"
+pushed = "^0.1.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
